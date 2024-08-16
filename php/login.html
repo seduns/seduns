@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="formLogin" id="form" name="frmLogin" method="POST" action="loginEngine.php">
+            <div class="form-control">
+
+                <input class="input email" type="text" id="email" name="txtUserName" placeholder="Email"> <br>
+                <div id="error-email" class="emailError"></div>
+                <input class="input password" type="text" id="password" name="txtPass" placeholder="Password"><br>
+                <div class="pass" id="error-pass"></div>
+            </div>
+            <div class="button-1">
+                
+                <input class="button login" type="submit" value="Login"> <input class="button cancel" type="reset" value="Clear">
+            </div>
+            <p>not have accout yet<a id="open_register" href="register.html" onclick="toggleRegister()" > register</a></p>
+            
+        
+    </form>
+    <div id="registerForm" class="register_form">
+        
+        <form class="formRegister" id="form_register" name="frmLogin" method="POST" action="loginEngine.php">
+            <input class="register name" type="text" id="registerName" name="txtRegisterName" placeholder="Name"> <br>
+            <input class="register phoneNo" type="text" id="phoneNo" name="txtPhoneNo" placeholder="Phone Number"> <br>
+            <input class="register email" type="text" id="registerEmail" name="txtRegisterEmail" placeholder="Email"> <br>
+            <input class="register password" type="text" id="registerPassword" name="txtRegisterPass" placeholder="Password"><br>
+            <div class="button-1">
+                <input class="button register-btn" type="submit" value="Register" id="register-reg-btn"> <input class="button cancel-reg" type="reset" value="Clear" id="cancel-reg-btn">
+            </div>
+            <div class="text-2" id="text-2">
+                <p class="text-2" id="text2" >already have account<a  id="open_login" href="#" onclick="toggleLogin()"> log in</a></p>
+            </div>
+            
+        </div>
+    </div>
+    <script defer src="../js/login.js"></script>
+    
+</body>
+</html>
