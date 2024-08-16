@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    
+    height: 100vh;
+    background-color: rgb(112, 0, 0);
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+    
+    
+    
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+    padding: 38px;
+    margin: 0px;
+    
+    
+    
+    
+}
+
+
+footer{
+    background-color: rgb(247, 247, 247);
+    padding: 50px;
+    margin: 5px;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+   
+}
+
+
+.layout{
+    
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    animation: transitionIn 0.7s;   
+}
+
+.layout.one{
+    width: 100%;
+    background-image: url(../img/logo.png);
+    background-size: 20%;
+    background-color: #ff000000;
+    
+}
+
+.layout.two{
+    width: 50%;
+    background-image: url(../img/logo.png);
+    background-color: rgba(0, 0, 0, 0.316);
+    
+}
+
+.blackgain{
+    border-radius: 20px;
+    display: flex;
+    height: 30vh;
+    width: 40%;
+    margin: 30vh 25vh;
+    transition: 0.5s;
+    
+}
+
+.image{
+    background-image: url(../img/logo.png);
+    background-color: rgba(4, 4, 4, 0.766);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position-y: 50%;
+    
+    
+}
+
+.blackgain:hover{
+    box-shadow: 0px 5px 10px black;
+    width: 45%;
+    height: 40vh;
+    background-image: url(../img/teronx_14.png);
+    background-position-y: 70%;
+    margin: 25vh 23vh;
+}
+
+.logo {
+    
+    background-image: url(../img/logo.png);
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    background-position-y: -28px;
+    background-position-x: -25px;
+    height: 50px;
+    width: 20vh;
+    
+}
+
+.container{
+    justify-content:start;
+    display: block;
+}
+
+.dropbtn{
+    background-color: #8e000000;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.dropdown{
+    margin-left: 65vh;
+    position:relative;
+    display: inline-block;
+}
+
+.content{
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;   
+    margin: 1px 6.5vh;
+    position: fixed;
+    width: 20vh;
+    border-radius: 0px;
+}
+
+.dropdown-content a{
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.43);
+    display: block;
+    font-size: 15px;
+    
+}
+
+.dropdown-content a:hover{
+    background-color: #e1e1e1;
+    
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #ff000074;
+    border-radius: 5px;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+    
+}
+
+a{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+/* top Nav Bar*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #8e0000b6;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 11vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+    
+}
+
+li{
+    float: left;
+    margin-left: 60px;
+}
+
+li a{
+    background-color: transparent;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+
+li a:hover{
+    background-color: rgba(255, 255, 0, 0);
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+}
+
+.profile a:hover{
+    border: none;
+    background-color: #8e0000b6;
+    border-radius: 5px;
+}
+
+
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media all and (max-width: 700px){
+    body{
+        background-color: rgb(31, 14, 84);
+    }
+    .layout.one{
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .profile .content{
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin-left: 9vh;
+        margin-right: auto;
+        width: 100px;
+        max-width: 80px;
+    }
+
+    .blackgain{
+        height: 50vh;
+        width: 20vh;
+        margin: 10vh 15vh;
+    }
+    
+    .blackgain:hover{
+        height: 50vh;
+        width: 40vh;
+        margin: 10vh 5vh;
+    }
+}
+
+
