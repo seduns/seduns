@@ -1,44 +1,76 @@
-body{
-  background-color: rgb(210, 210, 174);
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  align-items: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <link class="title-icon" rel="shortcut icon" type="x-icon" href="../img/love2.png">
+  <title>Happy Birthday to Youuuu</title>
 
-.container{
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
 
-.header{
-  margin: 0;
-}
+  <div class="image-nav">
 
-.form{
-  padding: 30px 40px;
-}
+  </div>
+  <div class="main-title"><p>Happy Birthday Sayangg</p></div>
+  <div class="header">
+  </div>
+  <div class="sini">
+    sinii<i class="fa-solid fa-arrow-down"></i>
+  </div>
+  
+  
+  <div class="container">
+    <div class="box-right">
+     
+      <div class="text-hover">
+        <div class="text2">
+          <div class="title-text">Happyy Birthdayy Sayanggku Izzah Nursyakirah Binti Abdul Rahman</div><br>
+          Nak cakap selamat hari jadii buat sayanggkuu<br>
+          Thankyouu sebab ada dengan baby selama niii<br>
+          Tup Tup dah setahunn dah kita hihi<br>
+          
+          Semoga sampaii bila bila bila bilaaaaaaa
+        </div>  
+      </div>
+    </div>
+    <div class="box-left">
+     
+    </div>
+  </div>
+  <div class="container-2">
 
-.form-control{
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-label{
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.form-control input{
-  display: block;
-  width: 100%;
-}
-
-small{
-  position: absolute;
-  visibility: hidden;
-}
+    <div class="card">
+      
+      <div class="image">
+         
+      </div>
+      <div class="text-on-card">
+        <p>Wishing you all the best sayangg</p>
+      </div>
+      <div class="cover">
+        <img src="../img/sayang.jpg">
+        
+        <div class="content">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="moving">
+      <div class="moving-text">
+        <p>HAPPY BIRTHDAY </p>
+        
+      </div>
+      
+    </div>
+    <div class="cake-image">
+      cake
+    </div>
+  </div>
+</body>
+</html>
